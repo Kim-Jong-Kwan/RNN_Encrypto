@@ -59,6 +59,7 @@ if candle_data["status"]=='0000':
     print(d_conv.year,"년",d_conv.month,"월",d_conv.day,"일",d_conv.hour,"시",d_conv.minute,"분",d_conv.second,"초")
     # 날짜 데이터 > 밀리세컨
     print(d_conv.timestamp)
+
     # print(d.year)
     # print(d.month)
     # print(d.day)
