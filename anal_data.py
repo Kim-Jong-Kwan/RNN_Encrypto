@@ -70,8 +70,7 @@ if candle_data["status"]=='0000':
 else:
     print("응답실패")
 #print(response.text)
-
-
+source_data=[]
 
 #정렬순서가 최근 데이터가 맨 뒤에
 def generateData(res_data,timeslot): # 시계열 훈련데이터 생성
@@ -88,13 +87,13 @@ def generateData(res_data,timeslot): # 시계열 훈련데이터 생성
 
 def confirm_data(x_data,y_data): #문제데이터와 정답데이터의 일치성 확인
     result_bool=True
-    if y_data[0]! = x_data[1][-1]:
+    if y_data[0]!= x_data[1][-1]:
         result_bool=False
-    if y_data[1]! = x_data[2][-1]:
+    if y_data[1]!= x_data[2][-1]:
         result_bool=False
-    if y_data[-1]! = source_data[-1]: # 마지막 데이터 확인
+    if y_data[-1]!= source_data[-1]: # 마지막 데이터 확인
         result_bool=False
-    if y_data[-2]! = source_data[-2]:
+    if y_data[-2]!= source_data[-2]:
         result_bool=False
     return result_bool #True일때 일치
 

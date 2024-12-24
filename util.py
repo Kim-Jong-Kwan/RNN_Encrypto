@@ -28,4 +28,3 @@ tdata = 1388070000000/1000
 # d = (cv_str2date(dstr))
 # dmill = (cv_date2milli(d))
 # print(gapCompare(dmill,datetime.now(),dmill)
-if __name__=="__main__"
