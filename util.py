@@ -3,6 +3,7 @@ from anal_data import candle_data
 def cv_format(d):
     fstr = "%y년 %m월 %d일 %H시 %M분 %S초"
     return d.strftime(fstr)
+
 def cv_mill2date(millsec): #날짜포맷 스트링변경 millisecond >> datetime
     return datetime.datetime.fromtimestamp(millsec)
 
